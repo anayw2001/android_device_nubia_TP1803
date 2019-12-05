@@ -322,13 +322,6 @@
         <item>265</item>
     </integer-array>
 
-    <!-- ImsService package name to bind to by default. If none is specified in an overlay, an
-         empty string is passed in -->
-    <string name="config_ims_package">org.codeaurora.ims</string>
-
-    <!-- Flag specifying whether or not IMS will use the dynamic ImsResolver -->
-    <bool name="config_dynamic_bind_ims">true</bool>
-
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
     on the headphone/microphone jack. When false use the older uevent framework -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
