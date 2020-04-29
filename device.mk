@@ -266,6 +266,11 @@ PRODUCT_PACKAGES += \
 # Power
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
