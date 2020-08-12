@@ -20,21 +20,22 @@ PRODUCT_BOARD_PLATFORM := sm8150
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.dmapp.rc \
-		init.nb.rc \
-		init.nubia.fingerprint.rc \
-		init.nubia.lights.rc \
-		init.nubia.mmi.rc \
-		init.nubia.platform.rc \
-		init.nubia.sensors.rc \
-		init.nubia.touch.lcd.rc \
-		init.nubia.usb.configfs.rc \
-		init.nubia.usb.rc \
-		init.nubia.vibrator.rc \
-		init.project.rc \
-		init.qcom.factory.rc \
-		init.qcom.rc \
-		init.target.rc \
+    init.nb.rc \
+    init.nubia.fingerprint.rc \
+    init.nubia.lights.rc \
+    init.nubia.mmi.rc \
+    init.nubia.platform.rc \
+    init.nubia.sensors.rc \
+    init.nubia.touch.lcd.rc \
+    init.nubia.usb.configfs.rc \
+    init.nubia.usb.rc \
+    init.nubia.vibrator.rc \
+    init.project.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.target.rc \
 
 PRODUCT_COPY_FILES += \
     device/nubia/TP1803/rootdir/etc/ueventd.rc:vendor/ueventd.rc

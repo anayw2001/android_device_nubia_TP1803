@@ -118,3 +118,9 @@ prebuilt_etc {
     sub_dir: "init/hw",
     src: "etc/init.target.rc",
 }
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    vendor: true,
+    src: "etc/fstab.qcom",
+}
