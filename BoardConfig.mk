@@ -14,27 +14,26 @@
 # limitations under the License.
 #
 
-# Board
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := sm8150
+DEVICE_PATH := device/nubia/TP1803
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    init.dmapp.rc \
-		init.nb.rc \
-		init.nubia.fingerprint.rc \
-		init.nubia.lights.rc \
-		init.nubia.mmi.rc \
-		init.nubia.platform.rc \
-		init.nubia.sensors.rc \
-		init.nubia.touch.lcd.rc \
-		init.nubia.usb.configfs.rc \
-		init.nubia.usb.rc \
-		init.nubia.vibrator.rc \
-		init.project.rc \
-		init.qcom.factory.rc \
-		init.qcom.rc \
-		init.target.rc \
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-2a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := cortex-a75
 
-PRODUCT_COPY_FILES += \
-    device/nubia/TP1803/rootdir/etc/ueventd.rc:vendor/ueventd.rc
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a75
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := sm8150
+TARGET_NO_BOOTLOADER := true
+TARGET_USES_UEFI := true
+
+# Platform
+TARGET_BOARD_PLATFORM := sm8150
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
