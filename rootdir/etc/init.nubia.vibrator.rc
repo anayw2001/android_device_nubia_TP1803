@@ -1,0 +1,13 @@
+# vibrator
+on post-fs-data
+#     chown system system /dev/input/event1
+#     chmod 664 /dev/input/event1
+#    chown system system /sys/class/leds/vibrator/state
+#    chmod 664  /sys/class/leds/vibrator/state
+
+#    chown system system /sys/class/leds/vibrator/activate
+#    chmod 664  /sys/class/leds/vibrator/activate
+
+#    chown system system /sys/class/leds/vibrator/duration
+#    chmod 664  /sys/class/leds/vibrator/duration
+

@@ -1,0 +1,120 @@
+
+// Copyright (C) 2020 StatiXOS
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+prebuilt_etc {
+    name: "init.dmapp.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.dmapp.rc",
+}
+
+prebuilt_etc {
+    name: "init.nb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nb.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.fingerprint.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.fingerprint.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.lights.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.lights.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.mmi.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.mmi.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.platform.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.platform.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.sensors.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.sensors.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.touch.lcd.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.touch.lcd.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.usb.configfs.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.usb.configfs.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.usb.rc",
+}
+
+prebuilt_etc {
+    name: "init.nubia.vibrator.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.nubia.vibrator.rc",
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.project.rc",
+}
+
+prebuilt_etc {
+    name: "init.qcom.factory.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.qcom.factory.rc",
+}
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.qcom.rc",
+}
+
+
+prebuilt_etc {
+    name: "init.target.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.target.rc",
+}

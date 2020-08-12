@@ -1,0 +1,34 @@
+# vibrator
+on post-fs-data
+    chown system system /sys/class/leds/green/breath
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/green/delay_off
+    chown system system /sys/class/leds/green/delay_on
+    chown system system /sys/class/leds/green/max_brightness
+    chown system system /sys/class/leds/green/trigger
+    chown system system /sys/class/leds/green/breath_feature
+
+    chmod 664 /sys/class/leds/green/breath
+    chmod 664 /sys/class/leds/green/brightness
+    chmod 664 /sys/class/leds/green/delay_off
+    chmod 664 /sys/class/leds/green/delay_on
+    chmod 664 /sys/class/leds/green/max_brightness
+    chmod 664 /sys/class/leds/green/trigger
+    chmod 664 /sys/class/leds/green/breath_feature
+
+    chown system system /sys/class/leds/red/breath
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/red/delay_off
+    chown system system /sys/class/leds/red/delay_on
+    chown system system /sys/class/leds/red/max_brightness
+    chown system system /sys/class/leds/red/trigger
+    chown system system /sys/class/leds/red/breath_feature
+
+    chmod 664 /sys/class/leds/red/breath
+    chmod 664 /sys/class/leds/red/brightness
+    chmod 664 /sys/class/leds/red/delay_off
+    chmod 664 /sys/class/leds/red/delay_on
+    chmod 664 /sys/class/leds/red/max_brightness
+    chmod 664 /sys/class/leds/red/trigger
+    chmod 664 /sys/class/leds/red/breath_feature
+
