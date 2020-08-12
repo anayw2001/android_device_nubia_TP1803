@@ -124,6 +124,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
