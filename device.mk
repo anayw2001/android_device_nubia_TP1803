@@ -20,6 +20,25 @@ PRODUCT_BOARD_PLATFORM := msmnile
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    init.class_late.sh \
+    init.class_main.sh \
+    init.mdm.sh \
+    init.mlvm_boot.sh \
+    init.nubia.cpreclog.sh \
+    init.nubia.usb.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.crashdata.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qti.charger.sh \
+    init.qti.fm.sh \
+    init.qti.ims.sh \
+    init.qti.manifest_sku.sh \
+    init.qti.qseecomd.sh \
     fstab.qcom \
     init.dmapp.rc \
     init.nb.rc \

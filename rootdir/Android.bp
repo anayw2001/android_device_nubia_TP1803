@@ -124,3 +124,117 @@ prebuilt_etc {
     vendor: true,
     src: "etc/fstab.qcom",
 }
+
+sh_binary {
+    name: "init.class_late.sh",
+    vendor: true,
+    src: "bin/init.class_late.sh"
+}
+
+sh_binary {
+    name: "init.class_main.sh",
+    vendor: true,
+    src: "bin/init.class_main.sh"
+}
+
+sh_binary {
+    name: "init.mdm.sh",
+    vendor: true,
+    src: "bin/init.mdm.sh"
+}
+
+sh_binary {
+    name: "init.mlvm_boot.sh",
+    vendor: true,
+    src: "bin/init.mlvm_boot.sh"
+}
+
+sh_binary {
+    name: "init.nubia.cpreclog.sh",
+    vendor: true,
+    src: "bin/init.nubia.cpreclog.sh"
+}
+
+sh_binary {
+    name: "init.nubia.usb.sh",
+    vendor: true,
+    src: "bin/init.class_late.sh"
+}
+
+sh_binary {
+    name: "init.qcom.class_core.sh",
+    vendor: true,
+    src: "bin/init.qcom.class_core.sh"
+}
+
+sh_binary {
+    name: "init.qcom.coex.sh",
+    vendor: true,
+    src: "bin/init.qcom.coex.sh"
+}
+
+sh_binary {
+    name: "init.qcom.crashdata.sh",
+    vendor: true,
+    src: "bin/init.qcom.crashdata.sh"
+}
+
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    vendor: true,
+    src: "bin/init.qcom.early_boot.sh"
+}
+
+sh_binary {
+    name: "init.qcom.efs.sync.sh",
+    vendor: true,
+    src: "bin/init.qcom.efs.sync.sh"
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    vendor: true,
+    src: "bin/init.qcom.post_boot.sh"
+}
+
+sh_binary {
+    name: "init.qcom.sensors.sh",
+    vendor: true,
+    src: "bin/init.qcom.sensors.sh"
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    vendor: true,
+    src: "bin/init.qcom.sh"
+}
+
+sh_binary {
+    name: "init.qti.charger.sh",
+    vendor: true,
+    src: "bin/init.qti.charger.sh"
+}
+
+sh_binary {
+    name: "init.qti.fm.sh",
+    vendor: true,
+    src: "bin/init.qti.fm.sh"
+}
+
+sh_binary {
+    name: "init.qti.ims.sh",
+    vendor: true,
+    src: "bin/init.qti.ims.sh"
+}
+
+sh_binary {
+    name: "init.qti.manifest_sku.sh",
+    vendor: true,
+    src: "bin/init.qti.manifest_sku.sh"
+}
+
+sh_binary {
+    name: "init.qti.qseecomd.sh",
+    vendor: true,
+    src: "bin/init.qti.qseecomd.sh"
+}
