@@ -194,6 +194,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service-lazy \
     android.hardware.light@2.0-impl
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
