@@ -30,7 +30,7 @@ $(call inherit-product, vendor/statix/config/common.mk)
 $(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit from device
-$(call inherit-product, device/nubia/tp1803/device.mk)
+$(call inherit-product, device/nubia/TP1803/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := TP1803
