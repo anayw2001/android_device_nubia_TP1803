@@ -395,7 +395,6 @@ vendor/lib/libbase64.so
 vendor/lib/libcpion.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/libdrmutils.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libhdcpsrm.so
@@ -416,7 +415,6 @@ vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libhdcpsrm.so
@@ -659,6 +657,7 @@ vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
+-vendor/lib/libplatformconfig.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
@@ -691,6 +690,7 @@ vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
+-vendor/lib64/libplatformconfig.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
