@@ -81,6 +81,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
