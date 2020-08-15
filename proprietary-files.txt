@@ -655,7 +655,7 @@ vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
--vendor/lib/libplatformconfig.so
+-vendor/lib/libplatformconfig.so|a8bb574f308fd66978e81ab20e66a8ccad6bbc37
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/libvppclient.so
 vendor/lib/libvpphcp.so
@@ -688,7 +688,7 @@ vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
--vendor/lib64/libplatformconfig.so
+-vendor/lib64/libplatformconfig.so|951422a0c964ee5ad4f309420f1584dfb8912fc5
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
