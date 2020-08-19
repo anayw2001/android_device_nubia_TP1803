@@ -189,6 +189,16 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
+# Overlays
+PRODUCT_PACKAGES += \
+    BluetoothRes \
+    CarrierConfigRes \
+    CellBroadcastReceiverRes \
+    FrameworksRes \
+    SystemUIRes \
+    TelecommRes \
+    TelephonyRes
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service-lazy \
