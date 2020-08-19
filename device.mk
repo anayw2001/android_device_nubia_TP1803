@@ -212,6 +212,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Overlays
+PRODUCT_PACKAGES += \
+    TP1803BluetoothOverlay \
+    TP1803CarrierConfigOverlay \
+    TP1803CellBroadcastReceiverOverlay \
+    TP1803FrameworksOverlay \
+    TP1803SystemUIOverlay \
+    TP1803TelecommOverlay \
+    TP1803TelephonyOverlay
+
 # Power
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
