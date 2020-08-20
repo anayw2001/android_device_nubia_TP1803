@@ -32,6 +32,8 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 # Inherit from device
 $(call inherit-product, device/nubia/TP1803/device.mk)
 
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := TP1803
 PRODUCT_NAME := statix_TP1803
