@@ -14,13 +14,6 @@
 // limitations under the License.
 
 prebuilt_etc {
-    name: "init.dmapp.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.dmapp.rc",
-}
-
-prebuilt_etc {
     name: "init.nb.rc",
     vendor: true,
     sub_dir: "init/hw",

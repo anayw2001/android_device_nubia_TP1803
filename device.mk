@@ -257,7 +257,6 @@ PRODUCT_PACKAGES += \
     init.qti.manifest_sku.sh \
     init.qti.qseecomd.sh \
     fstab.qcom \
-    init.dmapp.rc \
     init.nb.rc \
     init.nubia.fingerprint.rc \
     init.nubia.lights.rc \
