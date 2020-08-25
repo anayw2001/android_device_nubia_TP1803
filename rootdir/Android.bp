@@ -97,12 +97,6 @@ prebuilt_etc {
 }
 
 sh_binary {
-    name: "init.class_late.sh",
-    vendor: true,
-    src: "bin/init.class_late.sh"
-}
-
-sh_binary {
     name: "init.class_main.sh",
     vendor: true,
     src: "bin/init.class_main.sh"
@@ -181,25 +175,7 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.fm.sh",
-    vendor: true,
-    src: "bin/init.qti.fm.sh"
-}
-
-sh_binary {
     name: "init.qti.ims.sh",
     vendor: true,
     src: "bin/init.qti.ims.sh"
-}
-
-sh_binary {
-    name: "init.qti.manifest_sku.sh",
-    vendor: true,
-    src: "bin/init.qti.manifest_sku.sh"
-}
-
-sh_binary {
-    name: "init.qti.qseecomd.sh",
-    vendor: true,
-    src: "bin/init.qti.qseecomd.sh"
 }

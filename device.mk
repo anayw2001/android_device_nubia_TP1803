@@ -258,7 +258,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.class_late.sh \
     init.class_main.sh \
     init.mdm.sh \
     init.mlvm_boot.sh \
@@ -272,10 +271,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qti.charger.sh \
-    init.qti.fm.sh \
     init.qti.ims.sh \
-    init.qti.manifest_sku.sh \
-    init.qti.qseecomd.sh \
     fstab.qcom \
     init.nb.rc \
     init.nubia.lights.rc \
