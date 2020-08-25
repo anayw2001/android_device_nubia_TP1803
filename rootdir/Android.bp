@@ -28,13 +28,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.nubia.mmi.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.mmi.rc",
-}
-
-prebuilt_etc {
     name: "init.nubia.platform.rc",
     vendor: true,
     sub_dir: "init/hw",
