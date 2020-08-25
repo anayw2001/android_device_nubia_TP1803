@@ -292,6 +292,7 @@ PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.target.rc \
+    init.recovery.qcom.rc \
 
 PRODUCT_COPY_FILES += \
     device/nubia/TP1803/rootdir/etc/ueventd.rc:vendor/ueventd.rc

@@ -104,12 +104,18 @@ prebuilt_etc {
     src: "etc/init.qcom.rc",
 }
 
-
 prebuilt_etc {
     name: "init.target.rc",
     vendor: true,
     sub_dir: "init/hw",
     src: "etc/init.target.rc",
+}
+
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    recovery: true,
+    sub_dir: "init/hw",
+    src: "etc/init.recovery.qcom.rc",
 }
 
 prebuilt_etc {
