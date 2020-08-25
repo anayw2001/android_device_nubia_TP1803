@@ -221,6 +221,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service-lazy \
     android.hardware.light@2.0-impl
 
+# Lockscreen
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.secure_lock_screen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.secure_lock_screen.xml
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
