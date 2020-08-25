@@ -8,7 +8,5 @@ import /vendor/etc/init/hw/init.nubia.platform.rc
 import /vendor/etc/init/hw/init.nubia.sensors.rc
 import /vendor/etc/init/hw/init.nubia.usb.rc
 import /vendor/etc/init/hw/init.nubia.usb.configfs.rc
-import /vendor/etc/init/hw/init.nubia.vibrator.rc
 import /vendor/etc/init/hw/init.nubia.lights.rc
-import /vendor/etc/init/hw/init.nubia.fingerprint.rc
 

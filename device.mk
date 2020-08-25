@@ -262,7 +262,6 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.mdm.sh \
     init.mlvm_boot.sh \
-    init.nubia.cpreclog.sh \
     init.nubia.usb.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
@@ -279,15 +278,12 @@ PRODUCT_PACKAGES += \
     init.qti.qseecomd.sh \
     fstab.qcom \
     init.nb.rc \
-    init.nubia.fingerprint.rc \
     init.nubia.lights.rc \
     init.nubia.mmi.rc \
     init.nubia.platform.rc \
     init.nubia.sensors.rc \
-    init.nubia.touch.lcd.rc \
     init.nubia.usb.configfs.rc \
     init.nubia.usb.rc \
-    init.nubia.vibrator.rc \
     init.project.rc \
     init.qcom.factory.rc \
     init.qcom.rc \

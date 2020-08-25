@@ -21,13 +21,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.nubia.fingerprint.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.fingerprint.rc",
-}
-
-prebuilt_etc {
     name: "init.nubia.lights.rc",
     vendor: true,
     sub_dir: "init/hw",
@@ -56,13 +49,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.nubia.touch.lcd.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.touch.lcd.rc",
-}
-
-prebuilt_etc {
     name: "init.nubia.usb.configfs.rc",
     vendor: true,
     sub_dir: "init/hw",
@@ -74,13 +60,6 @@ prebuilt_etc {
     vendor: true,
     sub_dir: "init/hw",
     src: "etc/init.nubia.usb.rc",
-}
-
-prebuilt_etc {
-    name: "init.nubia.vibrator.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.vibrator.rc",
 }
 
 prebuilt_etc {
@@ -146,12 +125,6 @@ sh_binary {
     name: "init.mlvm_boot.sh",
     vendor: true,
     src: "bin/init.mlvm_boot.sh"
-}
-
-sh_binary {
-    name: "init.nubia.cpreclog.sh",
-    vendor: true,
-    src: "bin/init.nubia.cpreclog.sh"
 }
 
 sh_binary {
