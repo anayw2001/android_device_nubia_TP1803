@@ -291,7 +291,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
 
 PRODUCT_COPY_FILES += \
-    device/nubia/TP1803/rootdir/etc/ueventd.rc:vendor/ueventd.rc
+    device/nubia/TP1803/rootdir/etc/ueventd.qcom.rc:vendor/ueventd.rc
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
