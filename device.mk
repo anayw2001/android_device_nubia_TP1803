@@ -208,13 +208,13 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    BluetoothRes \
-    CarrierConfigRes \
-    CellBroadcastReceiverRes \
-    FrameworksRes \
-    SystemUIRes \
-    TelecommRes \
-    TelephonyRes
+    TP1803BluetoothOverlay \
+    TP1803CarrierConfigOverlay \
+    TP1803CellBroadcastReceiverOverlay \
+    TP1803FrameworksOverlay \
+    TP1803SystemUIOverlay \
+    TP1803TelecommOverlay \
+    TP1803TelephonyOverlay
 
 # Lights
 PRODUCT_PACKAGES += \
