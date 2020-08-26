@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Copyright (c) 2012-2016, The Linux Foundation. All rights reserved
 
-    Not a Contribution.
-
     Licensed under the Apache License, Version 2.0 (the "License"); you
     may not use this file except in compliance with the License.  You may
     obtain a copy of the License at
@@ -18,14 +16,14 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-   <!-- Average Current for bluetooth controller when idle. 0 by default-->
-   <integer translatable="false" name="config_bluetooth_idle_cur_ma">3</integer>
-   <!-- Average Current for bluetooth controller when receiving. 0 by default-->
-   <integer translatable="false" name="config_bluetooth_rx_cur_ma">20</integer>
-   <!-- Average Current for bluetooth controller when transmitting. 0 by default-->
-   <integer translatable="false" name="config_bluetooth_tx_cur_ma">33</integer>
-   <!-- Operating volatage for bluetooth controller. 0 by default-->
-   <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
+    <!-- Average Current for bluetooth controller when idle. 0 by default-->
+    <integer translatable="false" name="config_bluetooth_idle_cur_ma">3</integer>
+    <!-- Average Current for bluetooth controller when receiving. 0 by default-->
+    <integer translatable="false" name="config_bluetooth_rx_cur_ma">20</integer>
+    <!-- Average Current for bluetooth controller when transmitting. 0 by default-->
+    <integer translatable="false" name="config_bluetooth_tx_cur_ma">33</integer>
+    <!-- Operating volatage for bluetooth controller. 0 by default-->
+    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
@@ -171,14 +169,14 @@
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
-   <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
-   <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+    <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
+    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
 
-   <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
-   <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
+    <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
+    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
-   <!-- Indicates that connected MAC randomization is supported on this device -->
-   <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
+    <!-- Indicates that connected MAC randomization is supported on this device -->
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
 
     <!-- Indicates that p2p MAC randomization is supported on this device -->
     <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
@@ -282,12 +280,6 @@
     </string-array>
 
 
-    <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">4</integer>
-    <!--  Whether Multiuser UI should be shown -->
-    <bool name="config_enableMultiUserUI">true</bool>
-
-
     <!-- Config determines whether to update phone object when voice registration
     state changes. Voice radio tech change will always trigger an update of
     phone object irrespective of this config -->
@@ -337,23 +329,20 @@
     <!-- Flag specifying whether or not IMS will use the dynamic ImsResolver -->
     <bool name="config_dynamic_bind_ims">true</bool>
 
-    <!-- Boolean to provide support to keep wifi5 symbol for 8SS supported device and 11ax AP -->
-    <bool translateble="false" name="config_wifi_report_he_ready">true</bool>
+    <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
+    on the headphone/microphone jack. When false use the older uevent framework -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
 
-   <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
-   on the headphone/microphone jack. When false use the older uevent framework -->
-   <bool name="config_useDevInputEventForAudioJack">true</bool>
+    <!-- Boolean indicating if current platform supports HFP inband ringing tone-->
+    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
-   <!-- Boolean indicating if current platform supports HFP inband ringing tone-->
-   <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+    <!-- Package names to use with vendor iwlan implementation. -->
+    <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
+    <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
+    <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
 
-   <!-- Package names to use with vendor iwlan implementation. -->
-   <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
-   <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
-   <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
-
-   <!-- Device supports Sustained Performance Mode-->
-   <bool name="config_sustainedPerformanceModeSupported">true</bool>
+    <!-- Device supports Sustained Performance Mode-->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
     <!-- CUSTOM ADDITIONS START -->
 
