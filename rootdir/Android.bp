@@ -117,7 +117,7 @@ sh_binary {
 sh_binary {
     name: "init.nubia.usb.sh",
     vendor: true,
-    src: "bin/init.class_late.sh"
+    src: "bin/init.nubia.usb.sh"
 }
 
 sh_binary {
