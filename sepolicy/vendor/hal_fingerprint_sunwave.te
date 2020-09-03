@@ -3,3 +3,5 @@ hal_server_domain(hal_fingerprint_sunwave, hal_fingerprint)
 
 type hal_fingerprint_sunwave_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_fingerprint_sunwave)
+
+allow hal_fingerprint_sunwave sf_device:chr_file rw_file_perms;
