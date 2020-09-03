@@ -250,6 +250,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
     android.hardware.secure_element@1.0-impl \
+    android.hardware.secure_element@1.0-service \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
