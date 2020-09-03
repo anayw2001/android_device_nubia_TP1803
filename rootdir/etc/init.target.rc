@@ -49,7 +49,6 @@ on init
     start logd
     start vendor.qseecomd
     start keymaster-4-0
-    start keymaster-sb-4-0
 
 # Add a cpuset for the camera daemon
 # We want all cores for camera
