@@ -349,8 +349,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
 
 # Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.thermal@1.0-service
 
 # Touch
 PRODUCT_COPY_FILES += \
