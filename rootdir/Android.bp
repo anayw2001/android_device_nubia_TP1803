@@ -14,31 +14,10 @@
 // limitations under the License.
 
 prebuilt_etc {
-    name: "init.nb.rc",
+    name: "init.nubia.rc",
     vendor: true,
     sub_dir: "init/hw",
-    src: "etc/init.nb.rc",
-}
-
-prebuilt_etc {
-    name: "init.nubia.lights.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.lights.rc",
-}
-
-prebuilt_etc {
-    name: "init.nubia.platform.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.platform.rc",
-}
-
-prebuilt_etc {
-    name: "init.nubia.sensors.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.nubia.sensors.rc",
+    src: "etc/init.nubia.rc",
 }
 
 prebuilt_etc {
@@ -53,13 +32,6 @@ prebuilt_etc {
     vendor: true,
     sub_dir: "init/hw",
     src: "etc/init.nubia.usb.rc",
-}
-
-prebuilt_etc {
-    name: "init.project.rc",
-    vendor: true,
-    sub_dir: "init/hw",
-    src: "etc/init.project.rc",
 }
 
 prebuilt_etc {

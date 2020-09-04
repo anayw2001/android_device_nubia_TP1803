@@ -368,6 +368,22 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
+# native sensors input
+/sys/devices/virtual/input/input*   enable_int       0660  system   input
+/sys/devices/virtual/input/input*   gyro_op_mode     0660  system   input
+/sys/devices/virtual/input/input*   acc_range        0660  system   input
+/sys/devices/virtual/input/input*   acc_value        0660  system   input
+/sys/devices/virtual/input/input*   gyro_odr         0660  system   input
+/sys/devices/virtual/input/input*   fifo_data_sel    0660  system   input
+/sys/devices/virtual/input/input*   fifo_watermark   0660  system   input
+/sys/devices/virtual/input/input*   enable           0660  system   input
+/sys/devices/virtual/input/input*   acc_odr          0660  system   input
+/sys/devices/virtual/input/input*   temperature      0660  system   input
+/sys/devices/virtual/input/input*   acc_op_mode      0660  system   input
+/sys/devices/virtual/input/input*   fifo_bytecount   0660  system   input
+/sys/devices/virtual/input/input*   gyro_range       0660  system   input
+/sys/devices/virtual/input/input*   gyro_value       0660  system   input
+
 # sys-fs display
 /sys/class/graphics/fb*     hpd                      0664    system  graphics
 /sys/class/graphics/fb*     res_info                 0664    system  graphics

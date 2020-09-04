@@ -278,14 +278,9 @@ PRODUCT_PACKAGES += \
     init.qti.charger.sh \
     init.qti.ims.sh \
     fstab.qcom \
-    init.nb.rc \
-    init.nubia.lights.rc \
-    init.nubia.mmi.rc \
-    init.nubia.platform.rc \
-    init.nubia.sensors.rc \
-    init.nubia.usb.configfs.rc \
+    init.nubia.rc \
     init.nubia.usb.rc \
-    init.project.rc \
+    init.nubia.usb.configfs.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.target.rc \
