@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 DEVICE_PATH := device/nubia/TP1803
 
 # Architecture
@@ -36,6 +38,7 @@ TARGET_NO_BOOTLOADER := true
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
+BOARD_USES_QCOM_HARDWARE := true
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -60,6 +63,10 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
+# Bootanimation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2160
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
