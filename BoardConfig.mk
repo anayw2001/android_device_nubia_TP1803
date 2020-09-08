@@ -117,6 +117,11 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55588106240
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
