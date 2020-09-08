@@ -31,7 +31,7 @@
 import /vendor/etc/init/hw/init.nubia.rc
 
 on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_wglink audio_q6_pdr audio_q6_notifier audio_apr audio_adsp_loader audio_q6 audio_native audio_usf audio_pinctrl_wcd audio_swr audio_platform audio_hdmi audio_wcd_spi audio_stub audio_wcd_core audio_wsa881x audio_tfa9894 audio_wcd9360 audio_hdmi audio_machine_msmnile
+#    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_wglink audio_q6_pdr audio_q6_notifier audio_apr audio_adsp_loader audio_q6 audio_native audio_usf audio_pinctrl_wcd audio_swr audio_platform audio_hdmi audio_wcd_spi audio_stub audio_wcd_core audio_wsa881x audio_tfa9894 audio_wcd9360 audio_hdmi audio_machine_msmnile
     write /proc/sys/kernel/sched_boost 1
     symlink /data/tombstones /tombstones
 
@@ -141,9 +141,6 @@ on boot && property:persist.vendor.usb.controller.default=*
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
 
-#Load WLAN driver
-    insmod /vendor/lib/modules/qca_cld3_wlan.ko
-
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
@@ -242,7 +239,6 @@ service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
     class main
     oneshot
 
-
 service vendor.imsrcsservice /vendor/bin/imsrcsd
     class main
     user system
@@ -251,62 +247,15 @@ service vendor.imsrcsservice /vendor/bin/imsrcsd
 on property:vendor.ims.QMI_DAEMON_STATUS=1
     start vendor.imsdatadaemon
 
-#on property:vold.decrypt=trigger_restart_framework
-#    start cnss_diag
-#nubia add for cnss log
-on property:sys.nubia.wifi.log=enable
+on property:vold.decrypt=trigger_restart_framework
     start cnss_diag
 
-on property:sys.nubia.wifi.log=disable
-    stop cnss_diag
-#nubia add end
 service cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
     class main
     user system
     group system wifi inet sdcard_rw media_rw diag
     disabled
     oneshot
-
-#nubia add for poweroff&&poweroffcharge log
-service powerofflog /system/bin/sh /system/etc/fg_logs_start.sh /persist/nubialog
-    disabled
-    oneshot
-    group root shell
-    seclabel u:r:powerofflog:s0
-on property:sys.poweroffcharge.control=on
-    start powerofflog
-	
-service powercharge_property   /system/vendor/bin/poweroffcharge-getprop
-    disabled
-    oneshot
-    user root
-
-on property:persist.vendor.poweroffchargeproperty.control=on
-    start powercharge_property
-
-on charger
-    wait /dev/block/platform/soc/1d84000.ufshc
-    symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
-    mkdir /mnt/vendor/persist
-    mount ext4 /dev/block/bootdevice/by-name/persist  /mnt/vendor/persist  nosuid nodev barrier=1
-    mount_all fstab.qcom
-    restorecon_recursive /persist
-    restorecon_recursive /sys/kernel/debug
-    rm /sdcard
-    symlink /persist /sdcard
-    load_system_props
-    start qcom-post-boot
-    mkdir /mnt/vendor/persist/settings 0777 system system
-    #write /mnt/vendor/persist/settings/persist.vendor.game.lamps.charge.enable on
-    #touch /mnt/vendor/persist/misc/settings/persist.sys.game.lamps.charge.enable
-    setprop persist.vendor.poweroffchargeproperty.control on
-    chown  system system /mnt/vendor/persist/factory/lamps_charge_enable
-    chmod 777 /mnt/vendor/persist/factory/lamps_charge_enable
-    mkdir /persist/nubialog 0755 system system
-    chmod 755 /system/etc/fg_logs_start.sh
-    chown root shell /system/etc/fg_logs_start.sh
-#nubia add end
-
 
 service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
    class main
@@ -331,19 +280,3 @@ service vendor.tlocd /vendor/bin/tloc_daemon
     class late_start
     user system
     group drmrpc gps net_raw
-
-service smcinvoked /system/bin/smcinvoked
-    class main
-    user system
-    group system
-
-service vendor.sar_proxy_mgr /vendor/bin/sarproxymgr
-    class main
-    user radio
-    group radio wakelock net_admin
-    capabilities BLOCK_SUSPEND
-    disabled
-
-on property:ro.boot.baseband=mdm
-    start vendor.sar_proxy_mgr
-
