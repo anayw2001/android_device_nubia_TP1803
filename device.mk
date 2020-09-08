@@ -215,7 +215,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service-lazy \
+    android.hardware.light@2.0-service \
     android.hardware.light@2.0-impl
 
 # Lockscreen
@@ -368,9 +368,10 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi@1.0-service \
     hostapd \
     libwpa_client \
+    libwifi-hal-ctrl \
     libwifi-hal-qcom \
     wpa_supplicant \
     wpa_supplicant.conf
