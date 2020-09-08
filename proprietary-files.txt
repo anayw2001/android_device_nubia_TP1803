@@ -390,6 +390,7 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
+vendor/etc/init/cnd.rc
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
@@ -526,6 +527,8 @@ vendor/lib64/libdpmqmihal.so
 
 # DRM
 vendor/bin/qseecomd
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib/libbase64.so
 vendor/lib/libcpion.so
@@ -567,13 +570,10 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 
 # Fingerprint
-vendor/bin/hw/vendor.sw.swfingerprint@1.0-service|5efbea0106d9bbd2bf29dc7d28b9109ff3dabf29
-vendor/etc/init/vendor.sw.swfingerprint@1.0-service.rc|d478fac4ae87df3c83269786bb55c2ae5a29686c
-vendor/lib/vendor.sw.swfingerprint@1.0.so|a419746c6f49d956e79b57c3c0c739308b6f36fe
-vendor/lib/hw/fingerprint.sunwave.so|93d5d359e267e8a628ac1eeab645411d380835c0
-vendor/lib64/vendor.sw.swfingerprint@1.0.so|cd9f5a32cddce93770a047903fa4b540cdb20674
 vendor/lib64/hw/fingerprint.sunwave.so|dd121120c89cc084c4d31c5ee3ad4d8b69714e85
 
 # Gatekeeper
@@ -596,7 +596,6 @@ system/lib64/vendor.qti.gnss@1.1.so|c20f87925a4d2f3397abf73b08597c9a5f8c8055
 system/lib64/vendor.qti.gnss@1.2.so|c4f415c3c2c3d55fa98be1694f131c0ef81b13bb
 system/lib64/vendor.qti.gnss@2.0.so|17e65f21ab541e3477a82671e9209678582ac2f9
 system/lib64/vendor.qti.gnss@2.1.so|836960c2bc4bf74a460c53e9c8eb64bf3b94820e
-#-system/priv-app/com.qualcomm.location/com.qualcomm.location.apk|b50c1c666ca25c9fc00db355352494b42e61eb5c
 vendor/bin/hw/vendor.qti.gnss@2.1-service|bf474f8a9ba8b8a402816bdfc2e4fb3a4a55d913
 vendor/bin/garden_app|e0a4ed3fb0abb5a0683b6dfd2042e21cd52b0d1c
 vendor/bin/loc_launcher|07e120f08235084441161fe5516ceeb4e1fd22e3
@@ -730,9 +729,6 @@ vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
-
-# Lights
-vendor/lib64/hw/lights.msmnile.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msmnile.so
@@ -931,6 +927,13 @@ vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/qcrild.rc
+vendor/etc/init/dataadpl.rc
+vendor/etc/init/dataqti.rc
+vendor/etc/init/init-qcril-data.rc
+vendor/etc/init/netmgrd.rc
+vendor/etc/init/port-bridge.rc
+vendor/etc/init/vendor.qti.rmt_storage.rc
+vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/lib/libmdmdetect.so
