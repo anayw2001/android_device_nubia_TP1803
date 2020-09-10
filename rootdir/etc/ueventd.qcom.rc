@@ -28,7 +28,7 @@
 # Firmware directory Path
 # Below macro will be read by uevent and path will
 # be added to search path for firmware loading
-firmware_directories /vendor/firmware_mnt/image/
+firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
@@ -141,6 +141,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/sp_keymaster         0660   system     system
 /dev/sec_nvm_*            0660   system     system
 /dev/cryptoapp            0660   system     system
+/dev/cam-hyp-intf*        0660   system     camera
 /dev/spdaemon_ssr         0660   system     system
 /dev/spu_hal_ssr          0660   system     system
 /dev/iuicc*               0660   system     system
@@ -238,6 +239,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # sensors
 /dev/sensors              0660   system     system
+/dev/input/*              0660   system     input
 /sys/devices/i2c-12/12-*  pollrate_ms 0664 system system
 /sys/devices/f9925000.i2c/i2c-0/0-*                 enable         0660    input    system
 /sys/devices/f9925000.i2c/i2c-0/0-*                 poll_delay     0660    input    system

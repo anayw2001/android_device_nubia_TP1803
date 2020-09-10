@@ -19,7 +19,9 @@ on post-fs-data
     chmod 664 /sys/class/proximity/proximity/prox_value
     chmod 664 /sys/class/proximity/proximity/prox_init
     chmod 664 /sys/class/proximity/proximity/chip_name
-    chmod 666 /sys/class/proximity/proximity/proximity_fb
+    chmod 664 /sys/class/proximity/proximity/proximity_fb
+    chmod 664 /sys/class/proximity/proximity/prox_thres_check
+    chmod 664 /sys/class/proximity/proximity/prox_thres_to_persist
 
     chown system system /persist/sensors/als_cal_data
     chmod 0664 /persist/sensors/als_cal_data
@@ -59,6 +61,7 @@ on post-fs-data
     chmod 0644 /sys/class/light/light/module_tpcolor
     chmod 0644 /sys/class/light/light/dump_tp_parameter
     chmod 0644 /sys/class/light/light/dev_init
+
     chown system system /persist/sensors/rgb_color_cfg
     chmod 0664 /persist/sensors/rgb_color_cfg
     chown system system /persist/sensors/rgbc_cfg
