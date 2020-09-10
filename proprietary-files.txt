@@ -1098,6 +1098,11 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 
+# Seccam
+vendor/bin/hw/vendor.qti.hardware.seccam@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.seccam@1.0-service-qti.rc
+vendor/lib64/vendor.qti.hardware.seccam@1.0.so
+
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|4762e9efddbe85a934a95bbb2b726d8ed52f5b42
 vendor/bin/msm_irqbalance|d189e3f624a6df88c6d369254990e433a6e4b234
