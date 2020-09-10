@@ -645,7 +645,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.vibrator</name>
+        <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
         <interface>
