@@ -341,6 +341,13 @@
     <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
 
-   <!-- Device supports Sustained Performance Mode-->
-   <bool name="config_sustainedPerformanceModeSupported">true</bool>
+    <!-- Device supports Sustained Performance Mode-->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- CUSTOM ADDITIONS START -->
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+    <!-- CUSTOM ADDITIONS END -->
 </resources>
