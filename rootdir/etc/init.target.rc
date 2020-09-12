@@ -75,8 +75,6 @@ on post-fs
     setrlimit 8 67108864 67108864
 
     write /dev/ipa 1
-    start vendor.spdaemon
-    start vendor.sec_nvm
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
@@ -178,17 +176,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
-
-service vendor.spdaemon /vendor/bin/spdaemon
-    class core
-    user system
-    group system
-    shutdown critical
-
-service vendor.sec_nvm /vendor/bin/sec_nvm
-    class core
-    user system
-    group system
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
    class main
