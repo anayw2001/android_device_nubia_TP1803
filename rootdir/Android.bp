@@ -13,6 +13,12 @@
 // limitations under the License.
 
 prebuilt_etc {
+    name: "fstab.qcom",
+    vendor: true,
+    src: "etc/fstab.qcom",
+}
+
+prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
     sub_dir: "init/hw",
