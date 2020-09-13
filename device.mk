@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
     init.mdm.sh \
+    init.nubia.usb.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
@@ -26,6 +27,9 @@ PRODUCT_PACKAGES += \
     init.qcom.ssr.sh \
     init.qcom.sh \
     init.qti.ims.sh \
+    init.nubia.rc \
+    init.nubia.usb.rc \
+    init.nubia.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.factory.rc \
     init.target.rc \
