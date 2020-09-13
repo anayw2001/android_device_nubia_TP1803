@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2020 AOSPA
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,31 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Init
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
-    init.qcom.ssr.sh \
-    init.qcom.sh \
-    init.qti.ims.sh \
-    init.qcom.rc \
-    init.qcom.factory.rc \
-    init.target.rc \
-    init.recovery.qcom.rc \
-    ueventd.qcom.rc
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.recovery.qcom.rc
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
+LOCAL_SRC_FILES    := etc/$(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
 
-# QTI Components
-TARGET_COMMON_QTI_COMPONENTS := \
-    audio \
-    av \
-    bt \
-    display \
-    gps \
-    perf \
-    telephony \
-    wfd
+include $(CLEAR_VARS)
+LOCAL_MODULE       := ueventd.qcom.rc
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
+LOCAL_MODULE_STEM  := ueventd.rc
+LOCAL_SRC_FILES    := etc/$(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
