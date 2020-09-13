@@ -142,6 +142,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/sp_keymaster         0660   system     system
 /dev/sec_nvm_*            0660   system     system
 /dev/cryptoapp            0660   system     system
+/dev/cam-hyp-intf*        0660   system     camera
 /dev/spdaemon_ssr         0660   system     system
 /dev/spu_hal_ssr          0660   system     system
 /dev/iuicc*               0660   system     system
@@ -241,6 +242,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # sensors
 /dev/sensors              0660   system     system
+/dev/input/*              0660   system     input
 /sys/devices/i2c-12/12-*  pollrate_ms 0664 system system
 /sys/devices/f9925000.i2c/i2c-0/0-*                 enable         0660    input    system
 /sys/devices/f9925000.i2c/i2c-0/0-*                 poll_delay     0660    input    system
@@ -370,6 +372,22 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/system/memory/memory* state    0660 system system
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
+
+# native sensors input
+/sys/devices/virtual/input/input*   enable_int       0660  system   input
+/sys/devices/virtual/input/input*   gyro_op_mode     0660  system   input
+/sys/devices/virtual/input/input*   acc_range        0660  system   input
+/sys/devices/virtual/input/input*   acc_value        0660  system   input
+/sys/devices/virtual/input/input*   gyro_odr         0660  system   input
+/sys/devices/virtual/input/input*   fifo_data_sel    0660  system   input
+/sys/devices/virtual/input/input*   fifo_watermark   0660  system   input
+/sys/devices/virtual/input/input*   enable           0660  system   input
+/sys/devices/virtual/input/input*   acc_odr          0660  system   input
+/sys/devices/virtual/input/input*   temperature      0660  system   input
+/sys/devices/virtual/input/input*   acc_op_mode      0660  system   input
+/sys/devices/virtual/input/input*   fifo_bytecount   0660  system   input
+/sys/devices/virtual/input/input*   gyro_range       0660  system   input
+/sys/devices/virtual/input/input*   gyro_value       0660  system   input
 
 # sys-fs display
 /sys/class/graphics/fb*     hpd                      0664    system  graphics
