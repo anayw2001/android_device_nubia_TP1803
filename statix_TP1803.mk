@@ -26,7 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit from device
 $(call inherit-product, device/nubia/TP1803/device.mk)
@@ -35,7 +36,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := TP1803
-PRODUCT_NAME := lineage_TP1803
+PRODUCT_NAME := statix_TP1803
 PRODUCT_BRAND := Nubia
 PRODUCT_MODEL := Nubia Mini 5G
 PRODUCT_MANUFACTURER := Nubia
