@@ -34,14 +34,6 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-function blob_fixup() {
-    case "${1}" in
-    vendor/lib64/hw/camera.qcom.so)
-        sed -i "s/libc++.so/libcXD.so/g" "${2}"
-        ;;
-    esac
-}
-
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 SECTION=
@@ -71,5 +63,7 @@ fi
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
+
+sed -i "s/libc++.so/libcXD.so/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/hw/camera.qcom.so
 
 "${MY_DIR}/setup-makefiles.sh"
