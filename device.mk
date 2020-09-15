@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-service \
+    android.hardware.audio.service \
     android.hardware.audio@5.0-impl \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.1-impl \
@@ -115,10 +115,12 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan \
     memtrack.msmnile \
-    vendor.display.config@1.8 \
+    vendor.display.config@1.11 \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.allocator@1.0-service \
     vendor.qti.hardware.display.allocator@1.0.vendor \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.mapper@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -163,7 +165,8 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
    android.hidl.base@1.0 \
-   android.hidl.base@1.0_system
+   android.hidl.base@1.0_system \
+   libhwbinder
 
 # IPACM
 PRODUCT_PACKAGES += \
