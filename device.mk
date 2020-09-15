@@ -225,7 +225,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    TP1803BluetoothOverlay \
     TP1803CarrierConfigOverlay \
     TP1803CellBroadcastReceiverOverlay \
     TP1803FrameworksOverlay \
