@@ -124,3 +124,4 @@ persist.sys.design_charge_cycle=500
 ro.vendor.poweroff_led_red_brightness=/sys/clas/leds/red/brightness
 ro.vendor.poweroff_led_green_brightness=/sys/clas/leds/green/brightness
 vendor.gatekeeper.disable_spu=true
+ro.control_privapp_permissions=log
