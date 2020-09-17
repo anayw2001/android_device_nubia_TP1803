@@ -344,6 +344,9 @@
     <!-- Device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
+    <!-- Default value for led color when battery is medium charged -->
+    <integer name="config_notificationsBatteryMediumARGB">0xFFFF0000</integer>
+
     <!-- CUSTOM ADDITIONS START -->
 
     <!-- Hardware keys present on the device, stored as a bit field.
