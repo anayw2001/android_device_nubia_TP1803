@@ -245,8 +245,7 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service
+$(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 
 # Protobuf
 PRODUCT_COPY_FILES += \
