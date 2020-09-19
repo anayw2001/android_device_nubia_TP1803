@@ -126,10 +126,9 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/nubia/arter-tp1803
-TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
-KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm64-gcc/bin
+TARGET_KERNEL_SOURCE := kernel/nubia/q-rebase
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CONFIG := tp1803_defconfig
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
