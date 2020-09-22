@@ -596,8 +596,8 @@ system/lib64/vendor.qti.gnss@1.1.so|c20f87925a4d2f3397abf73b08597c9a5f8c8055
 system/lib64/vendor.qti.gnss@1.2.so|c4f415c3c2c3d55fa98be1694f131c0ef81b13bb
 system/lib64/vendor.qti.gnss@2.0.so|17e65f21ab541e3477a82671e9209678582ac2f9
 system/lib64/vendor.qti.gnss@2.1.so|836960c2bc4bf74a460c53e9c8eb64bf3b94820e
-vendor/bin/hw/vendor.qti.gnss@2.1-service|bf474f8a9ba8b8a402816bdfc2e4fb3a4a55d913
 vendor/bin/garden_app|e0a4ed3fb0abb5a0683b6dfd2042e21cd52b0d1c
+vendor/bin/hw/vendor.qti.gnss@2.1-service|bf474f8a9ba8b8a402816bdfc2e4fb3a4a55d913
 vendor/bin/loc_launcher|07e120f08235084441161fe5516ceeb4e1fd22e3
 vendor/bin/lowi-server|4f54c3e3f42bb1a4dbe9390f1bf2a74d973067b1
 vendor/bin/mlid|0d56deba51cb89d5f5c904c514b47c30b496e998
@@ -611,7 +611,7 @@ vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/lib/hw/android.hardware.gnss@1.1-impl-qti.so|42335ad6b777577df42cba8b03941cad52fe3cc9
 vendor/lib/libgnss.so|5678b326437581ed63e2f0f2ed41095f7ddcd7b5
 vendor/lib/libgnsspps.so|352486542d93a254a9cdcd86042a4e2753f5a554
-vendor/lib/libgps.utils.so|44c12918d22bc8f25a37a64fdc1f6e30998c14ed
+vendor/lib/libgps.utils.so|1aef5427139d009d68b148a8d7778e5bed52d409
 vendor/lib/libloc_core.so|e4fb36da4bded5c14571a8fddc800f34d84b8ef6
 vendor/lib/liblocation_api.so|cbad62b4ed56518a11f3f616b6d2a15d3f8101f0
 vendor/lib64/hw/android.hardware.gnss@1.1-impl-qti.so|540c25cae842d94aac5ed8c134f76bb4e4387f9a
@@ -624,7 +624,7 @@ vendor/lib64/libgdtap.so|7583965e8bd7499e2e1429916bc1bd4892f3fba7
 vendor/lib64/libgeofence.so|a6f8e6e2f032661015be8fbd7a1acc3a9d6947d6
 vendor/lib64/libgnss.so|62b18e3479761c7f3924ac63b8e7274f293a1ef0
 vendor/lib64/libgnsspps.so|5491e8549c5e3cd619db13c08bd930588bf92b4c
-vendor/lib64/libgps.utils.so|6180cdeff6a5e55e518f3b532298480b05b97029
+vendor/lib64/libgps.utils.so|8f4aa7f327185cd58fcedb183296d894f0ca08c6
 vendor/lib64/libizat_client_api.so|42531439d9f58583aadf42297990de9f33f7fdca
 vendor/lib64/libizat_core.so|e77dca18d60944d9e49ec16cffc02092a2126018
 vendor/lib64/liblbs_core.so|e4c53d1c0a7b006066545c555ebe7ad6864d9b32
