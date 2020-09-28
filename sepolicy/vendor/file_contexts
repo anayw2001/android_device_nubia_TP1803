@@ -1,0 +1,3 @@
+# Sunwave fingerprint
+/dev/sunwave_fp		                                u:object_r:sf_device:s0
+/data/system/sunwave(/.*)?		                u:object_r:sf_data_file:s0
