@@ -1,3 +1,6 @@
+# HALs
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.tp1803                             u:object_r:hal_light_default_exec:s0
+
 # Sunwave fingerprint
 /dev/sunwave_fp		                                u:object_r:sf_device:s0
 /data/system/sunwave(/.*)?		                u:object_r:sf_data_file:s0
