@@ -184,7 +184,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.tp1803
+    android.hardware.light@2.0-service.mini5g
 
 # Media
 PRODUCT_PACKAGES += \
@@ -223,13 +223,13 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    TP1803BluetoothOverlay \
-    TP1803CarrierConfigOverlay \
-    TP1803CellBroadcastReceiverOverlay \
-    TP1803FrameworksOverlay \
-    TP1803SystemUIOverlay \
-    TP1803TelecommOverlay \
-    TP1803TelephonyOverlay
+    Mini5GBluetoothOverlay \
+    Mini5GCarrierConfigOverlay \
+    Mini5GCellBroadcastReceiverOverlay \
+    Mini5GFrameworksOverlay \
+    Mini5GSystemUIOverlay \
+    Mini5GTelecommOverlay \
+    Mini5GTelephonyOverlay
 
 # Power
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
@@ -360,4 +360,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from vendor
-$(call inherit-product, vendor/nubia/TP1803/TP1803-vendor.mk)
+$(call inherit-product, vendor/nubia/mini5g/mini5g-vendor.mk)

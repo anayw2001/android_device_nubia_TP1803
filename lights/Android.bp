@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.tp1803",
-    init_rc: ["android.hardware.light@2.0-service.tp1803.rc"],
+    name: "android.hardware.light@2.0-service.mini5g",
+    init_rc: ["android.hardware.light@2.0-service.mini5g.rc"],
     srcs: ["service.cpp", "Light.cpp"],
     vendor: true,
     shared_libs: [
