@@ -15,7 +15,6 @@
 #
 
 # Platform
-PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msmnile
 
 # Additional native libraries
