@@ -136,6 +136,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
+# HIDL
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
+ODM_MANIFEST_FILES += $(LOCAL_PATH)/configs/manifest-qva.xml
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
