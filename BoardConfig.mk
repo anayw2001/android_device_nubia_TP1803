@@ -88,9 +88,6 @@ TARGET_SCREEN_DENSITY := 400
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
 
-# HIDL
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
-
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1
