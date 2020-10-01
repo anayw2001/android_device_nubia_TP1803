@@ -127,6 +127,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <!-- fingerprint hal: using remote service instead of Google's default service-->
+    <!-- Disable for Mini 5G because hardware/interfaces defines already
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
@@ -144,7 +145,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IQtiExtendedFingerprint</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal> -->
     <!-- keymaster -->
     <hal format="hidl">
        <name>android.hardware.keymaster</name>
