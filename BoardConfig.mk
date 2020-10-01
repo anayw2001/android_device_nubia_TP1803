@@ -35,9 +35,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
 
-# Platform
-TARGET_BOARD_PLATFORM := msmnile
-
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 

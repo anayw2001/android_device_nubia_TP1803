@@ -15,7 +15,7 @@
 #
 
 # Platform
-PRODUCT_BOARD_PLATFORM := msmnile
+TARGET_BOARD_PLATFORM := msmnile
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
