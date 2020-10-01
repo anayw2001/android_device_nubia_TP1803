@@ -185,6 +185,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.mini5g
 
 # Media
+LIBION_HEADER_PATH_WRAPPER := vendor/qcom/opensource/core-utils/build/libion_header_paths/libion_path.mk
+
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
