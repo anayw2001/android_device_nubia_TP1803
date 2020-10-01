@@ -64,6 +64,6 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${STATIX_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
-sed -i "s/libc++.so/libcXD.so/g" "$STATIX_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/hw/camera.qcom.so
+patchelf --replace-needed libc++.so libcXD.so "$STATIX_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/hw/camera.qcom.so
 
 "${MY_DIR}/setup-makefiles.sh"
