@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
 # HIDL
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom/media/conf_files/msmnile/c2_manifest.xml
-ODM_MANIFEST_FILES += $(LOCAL_PATH)/configs/manifest-qva.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 
 # Init
 PRODUCT_PACKAGES += \
