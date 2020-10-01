@@ -84,23 +84,6 @@ PRODUCT_COPY_FILES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Display
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-impl \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
-    vendor.qti.hardware.display.allocator-service \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.msmnile \
-    hwcomposer.msmnile \
-    memtrack.msmnile \
-    libqdMetaData.vendor \
-    libdisplayconfig.vendor \
-    vendor.display.config@1.10.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
@@ -231,6 +214,10 @@ PRODUCT_PACKAGES += \
     Mini5GSystemUIOverlay \
     Mini5GTelecommOverlay \
     Mini5GTelephonyOverlay
+
+# QTI Components
+TARGET_COMMON_QTI_COMPONENTS := \
+    display
 
 # Power
 $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
