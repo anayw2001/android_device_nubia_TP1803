@@ -138,6 +138,9 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sw_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sw_config.xml \
+    $(LOCAL_PATH)/configs/sf-keys.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sf-keys.idc \
+    $(LOCAL_PATH)/configs/sf-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sf-keys.kl \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # For config.fs
