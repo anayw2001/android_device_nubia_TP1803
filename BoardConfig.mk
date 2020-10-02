@@ -117,7 +117,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
