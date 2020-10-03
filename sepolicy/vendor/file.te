@@ -1,1 +1,10 @@
+# rootfs
+type adsprpcd_file, file_type;
+type bt_firmware_file, file_type;
+type firmware_file, file_type;
+type persist_file, file_type;
+
+# sysfs
+type sysfs_battery_supply, sysfs_type, fs_type;
+
 type sf_data_file, file_type, data_file_type, core_data_file_type;
