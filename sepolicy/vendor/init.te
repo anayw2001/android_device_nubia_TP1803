@@ -1,2 +1,0 @@
-allow init hal_drm_hwservice:hwservice_manager { find add };
-allow init hidl_base_hwservice:hwservice_manager { find add };
