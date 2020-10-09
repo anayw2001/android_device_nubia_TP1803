@@ -9,7 +9,8 @@
 /persist(/.*)?           u:object_r:vendor_persist_file:s0
 
 # HALs
-/vendor/bin/hw/android\.hardware\.light@2\.0-service\.nubia_tp1803                             u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.clearkey           u:object_r:hal_drm_clearkey_exec:s0
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.nubia_tp1803               u:object_r:hal_light_default_exec:s0
 
 # Scripts
 /vendor/bin/init.nubia.usb.sh                           u:object_r:vendor_qti_init_shell_exec:s0
