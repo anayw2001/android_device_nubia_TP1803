@@ -133,6 +133,14 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
