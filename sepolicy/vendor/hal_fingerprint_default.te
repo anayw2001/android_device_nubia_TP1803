@@ -1,2 +1,5 @@
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default sf_device:chr_file rw_file_perms;
+allow hal_fingerprint_default input_device:dir { search };
+allow hal_fingerprint_default input_device:chr_file { open read write ioctl rw_file_perms};
+allow hal_fingerprint_default self:netlink_kobject_uevent_socket { create setopt bind read };
