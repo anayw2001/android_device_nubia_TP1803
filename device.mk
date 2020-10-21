@@ -291,10 +291,10 @@ PRODUCT_PACKAGES += \
     init.nubia.usb.configfs.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.target.rc \
-    init.recovery.qcom.rc \
+    init.target.rc
 
 PRODUCT_COPY_FILES += \
+    device/nubia/mini5g/rootdir/etc/init.recovery.qcom.rc:$(TARGET_RECOVERY_ROOT_OUT)/init.recovery.qcom.rc \
     device/nubia/mini5g/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 # Sensors
