@@ -18,16 +18,16 @@
 
 set -e
 
-DEVICE=TP1803
+DEVICE=mini5g
 VENDOR=nubia
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-STATIX_ROOT="${MY_DIR}/../../.."
+PA_ROOT="${MY_DIR}/../../.."
 
-HELPER="${STATIX_ROOT}/vendor/statix/build/tools/extract_utils.sh"
+HELPER="${PA_ROOT}/vendor/pa/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -68,7 +68,7 @@ if [ -z "${SRC}" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${STATIX_ROOT}" false "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${PA_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
 

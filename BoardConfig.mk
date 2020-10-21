@@ -15,8 +15,9 @@
 #
 
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/nubia/TP1803
+DEVICE_PATH := device/nubia/mini5g
 
 # Architecture
 TARGET_ARCH := arm64
@@ -101,7 +102,6 @@ USE_DEVICE_SPECIFIC_GPS := true
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Media
 TARGET_PROVIDES_LIBPLATFORMCONFIG := true
@@ -113,7 +113,7 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,mem
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -121,13 +121,11 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-#BOARD_VENDOR_KERNEL_MODULES += $(wildcard $(DEVICE_PATH)/audio/modules/*.ko)
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/nubia/q-rebase
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := tp1803_defconfig
+TARGET_KERNEL_VERSION := 4.14
+KERNEL_DEFCONFIG := tp1803_defconfig
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -160,8 +158,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
-include device/qcom/sepolicy_vndr/SEPolicy.mk
-
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
@@ -182,4 +178,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/nubia/TP1803/BoardConfigVendor.mk
+-include vendor/nubia/mini5g/BoardConfigVendor.mk
