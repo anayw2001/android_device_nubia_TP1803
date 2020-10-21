@@ -208,12 +208,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    TP1803CarrierConfigOverlay \
-    TP1803CellBroadcastReceiverOverlay \
-    TP1803FrameworksOverlay \
-    TP1803SystemUIOverlay \
-    TP1803TelecommOverlay \
-    TP1803TelephonyOverlay
+    TP1803FrameworksOverlay
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -254,6 +249,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     display \
+    overlay \
     perf \
     telephony \
     wfd
