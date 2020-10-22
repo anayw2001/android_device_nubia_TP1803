@@ -96,6 +96,7 @@ vendor.display.enable_optimize_refresh=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qfp=true
 ro.opengles.version=196610
 ro.crypto.volume.filenames_mode=aes-256-cts
